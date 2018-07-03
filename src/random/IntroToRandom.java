@@ -7,6 +7,7 @@ import java.util.Random;
 
 public class IntroToRandom {
 	public static void main(String[] args) {
+		Random rand = new Random();
 		
 		int r = 0;
 		
@@ -16,13 +17,13 @@ public class IntroToRandom {
 		
 
 		//4. Limit the random number between 0 and 100
-
+		r = rand.nextInt(100);
 		//5. Limit the random number between 25 and 75. Hint: ((highest value - lowest value)+1) + lowest value
-
+		r = rand.nextInt(51)+25;
 		//6. Challenge: Limit the random number between -222 and 88
-
+		r = rand.nextInt(311)-222;
 		//1. Print out the value of r
-		
+	System.out.println(r);
 		//2. Run the program.  What number appears in the console?
 		//   Run it again. Is the number the same?
 	}
